@@ -1,32 +1,17 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main()
+{
+   int data[5];
+   cout << "Enter elements: ";
 
-# Precompiled Headers
-*.gch
-*.pch
+   for(int i = 0; i < 5; ++i)
+      cin >> data[i];
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+   cout << "You entered: ";
+   for(int i = 0; i < 5; ++i)
+      cout << endl << *(data + i);
 
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+   return 0;
+}
